@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <rect width="600" height="400" rx="12" fill="#0d1424" stroke="#1e293b" stroke-width="2" />
+  <text x="300" y="38" text-anchor="middle" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold">NEXT-GEN QUANTUM SENSORS: ATOM INTERFEROMETRY</text>
+  <text x="300" y="62" text-anchor="middle" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="12">Ultra-Precise Gravimetry &amp; Tests of Gravitational Dephasing</text>
+  <!-- Laser pulses -->
+  <line x1="80" y1="120" x2="520" y2="120" stroke="#ef4444" stroke-width="3" opacity="0.8" />
+  <line x1="80" y1="200" x2="520" y2="200" stroke="#ef4444" stroke-width="3" opacity="0.8" />
+  <line x1="80" y1="280" x2="520" y2="280" stroke="#ef4444" stroke-width="3" opacity="0.8" />
+  <text x="60" y="125" text-anchor="end" fill="#ef4444" font-size="11" font-family="monospace">pi/2 Laser</text>
+  <text x="60" y="205" text-anchor="end" fill="#ef4444" font-size="11" font-family="monospace">pi Laser</text>
+  <text x="60" y="285" text-anchor="end" fill="#ef4444" font-size="11" font-family="monospace">pi/2 Laser</text>
+  <!-- Atomic wavepacket paths (Diamond interferometer) -->
+  <path d="M 150 120 L 300 200 L 450 280" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="6 4" />
+  <path d="M 150 120 L 300 120 L 450 280" fill="none" stroke="#34d399" stroke-width="3" />
+  <circle cx="150" cy="120" r="7" fill="#38bdf8" />
+  <circle cx="300" cy="200" r="7" fill="#38bdf8" />
+  <circle cx="300" cy="120" r="7" fill="#34d399" />
+  <circle cx="450" cy="280" r="9" fill="#fbbf24" />
+  <text x="470" y="285" fill="#fbbf24" font-family="monospace" font-size="12">Interference Fringe: Delta Phi = k_eff * g * T^2</text>
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="40%" stop-color="#0a101f" />
+      <stop offset="100%" stop-color="#04060c" />
+    </linearGradient>
+    <linearGradient id="wallPanel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141c2e" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0a0f1d" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080c18" />
+      <stop offset="20%" stop-color="#0e172a" />
+      <stop offset="100%" stop-color="#04060a" />
+    </linearGradient>
+    <linearGradient id="holoCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.1" />
+    </linearGradient>
+    <radialGradient id="chamberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="40%" stop-color="#818cf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#050811" stop-opacity="0" />
+    </radialGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <!-- Deep Lab Space Background -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)" />
+
+  <!-- Laboratory Ceiling Architecture -->
+  <polygon points="0,0 1920,0 1780,140 140,140" fill="#0d1424" />
+  <line x1="200" y1="140" x2="1720" y2="140" stroke="#38bdf8" stroke-width="2" opacity="0.4" filter="url(#neonGlow)" />
+  <line x1="400" y1="0" x2="350" y2="140" stroke="#1e293b" stroke-width="2" />
+  <line x1="960" y1="0" x2="960" y2="140" stroke="#1e293b" stroke-width="2" />
+  <line x1="1520" y1="0" x2="1570" y2="140" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Back Wall Structural Panels -->
+  <rect x="80" y="140" width="1760" height="600" fill="url(#gridPattern)" />
+  <rect x="120" y="170" width="420" height="540" rx="8" fill="url(#wallPanel)" stroke="#1e293b" stroke-width="1.5" />
+  <rect x="1380" y="170" width="420" height="540" rx="8" fill="url(#wallPanel)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Central Scientific Visualization Aperture -->
+  <circle cx="960" cy="420" r="320" fill="#040711" stroke="#1e293b" stroke-width="2" />
+  <circle cx="960" cy="420" r="300" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6" />
+  <circle cx="960" cy="420" r="260" fill="none" stroke="#818cf8" stroke-width="1" stroke-dasharray="14 10" opacity="0.5" />
+  <circle cx="960" cy="420" r="200" fill="url(#chamberGlow)" />
+
+  <!-- Quantum / Cosmic Holographic Rings in Background -->
+  <ellipse cx="960" cy="420" rx="270" ry="80" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.5" transform="rotate(-25 960 420)" />
+  <ellipse cx="960" cy="420" rx="270" ry="80" fill="none" stroke="#a855f7" stroke-width="1.2" opacity="0.4" transform="rotate(35 960 420)" />
+
+  <!-- Background Data Readouts on Lateral Columns -->
+  <g opacity="0.65" font-family="'Courier New', monospace" font-size="12" fill="#38bdf8">
+    <text x="145" y="210">SYSTEM: QUANTUM METRIC ANALYZER</text>
+    <text x="145" y="235">l_P = sqrt(hbar*G/c^3) = 1.616e-35 m</text>
+    <text x="145" y="255">t_P = sqrt(hbar*G/c^5) = 5.391e-44 s</text>
+    <text x="145" y="275">E_P = 1.956e+09 J [1.22e+19 GeV]</text>
+    <text x="145" y="305">METRIC TENSOR EVALUATION: ONLINE</text>
+    <path d="M 145 320 L 510 320" stroke="#38bdf8" stroke-width="1" opacity="0.5" />
+    <path d="M 145 340 L 220 340 L 240 370 L 320 370 L 340 340 L 510 340" fill="none" stroke="#38bdf8" stroke-width="1" />
+  </g>
+
+  <g opacity="0.65" font-family="'Courier New', monospace" font-size="12" fill="#34d399">
+    <text x="1405" y="210">COMPUTATION NODE: MATLAB R2026</text>
+    <text x="1405" y="235">SCRIPT: QuantumGravity.m</text>
+    <text x="1405" y="255">G_uv = (8*pi*G / c^4) * T_uv</text>
+    <text x="1405" y="275">SPIN FOAM AREA SPECTRA: DISCRETE</text>
+    <text x="1405" y="305">SIMULATION RESOLUTION: 300 DPI</text>
+    <path d="M 1405 320 L 1770 320" stroke="#34d399" stroke-width="1" opacity="0.5" />
+    <circle cx="1430" cy="360" r="15" fill="none" stroke="#34d399" stroke-width="1.5" />
+    <circle cx="1480" cy="360" r="25" fill="none" stroke="#34d399" stroke-width="1.5" />
+    <circle cx="1550" cy="360" r="10" fill="none" stroke="#34d399" stroke-width="1.5" />
+  </g>
+
+  <!-- Laboratory Floor with Reflective Horizon -->
+  <polygon points="0,740 1920,740 1920,1080 0,1080" fill="url(#floorGrad)" />
+  <line x1="0" y1="740" x2="1920" y2="740" stroke="#38bdf8" stroke-width="2.5" opacity="0.7" filter="url(#neonGlow)" />
+
+  <!-- Floor Perspective Grid Lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.45">
+    <line x1="960" y1="740" x2="960" y2="1080" />
+    <line x1="960" y1="740" x2="600" y2="1080" />
+    <line x1="960" y1="740" x2="200" y2="1080" />
+    <line x1="960" y1="740" x2="-200" y2="1080" />
+    <line x1="960" y1="740" x2="1320" y2="1080" />
+    <line x1="960" y1="740" x2="1720" y2="1080" />
+    <line x1="960" y1="740" x2="2120" y2="1080" />
+    <line x1="0" y1="800" x2="1920" y2="800" />
+    <line x1="0" y1="880" x2="1920" y2="880" />
+    <line x1="0" y1="980" x2="1920" y2="980" />
+  </g>
+
+  <!-- Floor Reflection Glow from Central Window -->
+  <ellipse cx="960" cy="780" rx="400" ry="30" fill="url(#holoCyan)" />
+</svg>
